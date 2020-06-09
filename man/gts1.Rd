@@ -1,4 +1,5 @@
 \name{gts1}
+\alias{gts1}
 \title{
 Function querying start time, end time and duration of a specific geological time concept
 }
@@ -40,9 +41,9 @@ Beginning and end time of the geoConcept and its duration.
 }
 \examples{
 # Local concept in North America
-gts1("Roadian") 
+gts1("Roadian")
 # Global concept
-gts1("Jurassic") 
+gts1("Jurassic")
 
 }
 

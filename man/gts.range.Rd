@@ -1,4 +1,5 @@
 \name{gts.range}
+\alias{gts.range}
 \title{
 Function querying all geological time concepts within a time interval
 }

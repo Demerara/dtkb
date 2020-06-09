@@ -1,4 +1,5 @@
 \name{gts.topo}
+\alias{gts.topo}
 \title{
 Topology of two geological time concept
 
@@ -45,6 +46,6 @@ Topology of two geological time concept. All possible topology in time is refere
 # Adavere Age (local) vs. Jurassic Period (global). Should be Before
 gts.topo(geoConcept1 = "Adavere", geoConcept2 = "Jurassic")
 # Jurassic Period (global) vs. Panerozoic Eon (global). Should be During
-gts.topo(geoConcept1 = "Jurassic", geoConcept2 = "Phanerozoic")  
+gts.topo(geoConcept1 = "Jurassic", geoConcept2 = "Phanerozoic")
 }
 
