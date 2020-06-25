@@ -48,6 +48,7 @@ gssp.map = function (iscVersion = NULL, map = 2){
       addControl(title, position = "bottomleft") %>%
       addMarkers(lng = as.numeric(longlatdf[,1]), lat = as.numeric(longlatdf[,2]), popup = concept)
     print(m)
+    m
   }
   
   if(map == 2){
