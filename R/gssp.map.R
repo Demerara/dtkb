@@ -9,11 +9,14 @@
 
 gssp.map = function (iscVersion = NULL, map = 1){
   
-  res = gts.gssp(iscVersion = iscVersion)
+  
   
   # title of the GSSP plot
   if(is.null(iscVersion)) isc = "GSSP"
-  else isc = paste("GSSP of ", res[1,1])
+  else {
+    isc = paste("GSSP of ", res[1,1])
+    res = gts.gssp(iscVersion = iscVersion)
+  }
 
   # GSSP names
   concept <- res[,2]
@@ -52,7 +55,7 @@ gssp.map = function (iscVersion = NULL, map = 1){
   }
   
   if(is.null(iscVersion)){
-    wmap <- getMap(resolution = "low")
+    wmap <- rworldmap::getMap(resolution = "low")
     for(i in unique(res[,1])){
       plot(wmap, asp = 1, main = i)
       points(longlatdf[,1], longlatdf[,2], col = "red", cex = .6)
