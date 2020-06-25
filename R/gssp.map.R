@@ -7,15 +7,14 @@
 
 # required pacakge: leaflet, htmltools, htmlwidgets
 
-gssp.map = function (iscVersion = NULL, map = 1){
+gssp.map = function (iscVersion = NULL, map = 2){
   
-  
-  
+  res = gts.gssp(iscVersion = iscVersion)  # get the gssp
   # title of the GSSP plot
-  if(is.null(iscVersion)) isc = "GSSP"
-  else {
+  if(is.null(iscVersion)) {
+    isc = "GSSP"
+    } else {
     isc = paste("GSSP of ", res[1,1])
-    res = gts.gssp(iscVersion = iscVersion)
   }
 
   # GSSP names
