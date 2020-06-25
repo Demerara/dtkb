@@ -55,7 +55,7 @@ gssp.map = function (iscVersion = NULL, map = 1){
   }
   
   if(is.null(iscVersion)){
-    wmap <- rworldmap::getMap(resolution = "low")
+    wmap <- getMap(resolution = "low")
     for(i in unique(res[,1])){
       plot(wmap, asp = 1, main = i)
       points(longlatdf[,1], longlatdf[,2], col = "red", cex = .6)
