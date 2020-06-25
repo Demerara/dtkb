@@ -5,7 +5,7 @@ Version: 1.0
 Author: Chao Ma, Xiaogang Ma, Amuruta Kale
 Maintainer: Chao Ma <chao@uidaho.edu>
 Description: 
-Imports: SPARQL
+Imports: SPARQL, rworldmap
 Depends: R (>= 3.5)
 Suggests: 
     knitr,
