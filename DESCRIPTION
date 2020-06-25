@@ -1,12 +1,19 @@
-Package: dtkb
+Package: deeptime
 Type: Package
 Title: Deep time knowledge base extraction
 Version: 1.0
 Author: Chao Ma, Xiaogang Ma, Amuruta Kale
 Maintainer: Chao Ma <chao@uidaho.edu>
-Description: 
-Imports: SPARQL, rworldmap
-Depends: R (>= 3.5)
+Description: Query the deeptime knowledge base.
+Imports: 
+    rworldmap, 
+    leaflet, 
+    htmltools, 
+    htmlwidgets, 
+    RCurl, 
+    sp, 
+    XML
+Depends: R (>= 3.5), SPARQL
 Suggests: 
     knitr,
     rmarkdown,
