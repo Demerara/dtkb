@@ -1,3 +1,2 @@
-exportPattern("^[[:alpha:]]+")
-importFrom(rworldmap, getMap)
-importFrom(SPARQL, SPARQL)
+#' @importFrom rworldmap getMap
+#' @importFrom SPARQL SPARQL
