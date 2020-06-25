@@ -9,14 +9,16 @@
 
 gssp.map = function (iscVersion = NULL, map = 2){
   
-  res = gts.gssp(iscVersion = iscVersion)  # get the gssp
+  # get the gssp
+  res = gts.gssp(iscVersion = iscVersion) 
+  
   # title of the GSSP plot
   if(is.null(iscVersion)) {
     isc = "GSSP"
-    } else {
+  } else {
     isc = paste("GSSP of ", res[1,1])
   }
-
+  
   # GSSP names
   concept <- res[,2]
   # take out only the long and lat records from the sparql query results
@@ -41,10 +43,11 @@ gssp.map = function (iscVersion = NULL, map = 2){
       tag.map.title, HTML(isc)
     )  
     
-    leaflet() %>%
+    m = leaflet() %>%
       addTiles() %>%
       addControl(title, position = "bottomleft") %>%
-      addMarkers(lng = as.numeric( as.character(longlatdf[,1]) ), lat = as.numeric( as.character(longlatdf[,2])), popup = concept)
+      addMarkers(lng = as.numeric(longlatdf[,1]), lat = as.numeric(longlatdf[,2]), popup = concept)
+    print(m)
   }
   
   if(map == 2){
