@@ -26,7 +26,7 @@ gts.iscSchemes(id = "all", prefix = NULL, graph = NULL, URI = TRUE)
 \examples{
 gts.iscSchemes("all")
 gts.iscSchemes("latest")
-gts.iscSchemes("latest", URI=F)
-gts.iscSchemes("all", URI=F)
+gts.iscSchemes("latest", URI=FALSE)
+gts.iscSchemes("all", URI=FALSE)
 }
 
