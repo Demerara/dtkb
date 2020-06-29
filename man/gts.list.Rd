@@ -18,12 +18,6 @@ gts.list(region, level=NULL)
 \item{level}{
 [character] The level of the geological time concept, e.g. "Age". [Optional]
 }
-\item{prefix}{
-[character] prefix for SPARQL querying. [Optional]
-}
-\item{graph}{
-[character] GRAPH for SPARQL querying. [Optional]
-}
 }
 
 \references{

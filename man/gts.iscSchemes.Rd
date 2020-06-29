@@ -18,6 +18,9 @@ gts.iscSchemes(id = "all", prefix = NULL, graph = NULL, URI = TRUE)
   \item{graph}{
 [character] GRAPH for SPARQL querying. [Optional, default is NULL]
 }
+  \item{URI}{
+[character] Show result as URI or not. [TRUE (default) or FALSE]
+}
 }
 
 \examples{
