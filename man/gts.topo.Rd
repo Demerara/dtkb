@@ -2,9 +2,8 @@
 \alias{gts.topo}
 \title{
 Topology of two geological time concept
-
 }
-\description{
+\description{Topology of two geological time concept.
 }
 \usage{
 gts.topo(geoConcept1, geoConcept2, 

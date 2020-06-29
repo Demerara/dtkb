@@ -3,7 +3,8 @@
 \title{
 Function querying start time, end time and duration of a specific geological time concept
 }
-\description{
+\description{Function querying start time, end time and duration of a specific geological time concept
+
 }
 \usage{
 gts.iscSchemes(id = "all", prefix = NULL, graph = NULL, URI = TRUE)
