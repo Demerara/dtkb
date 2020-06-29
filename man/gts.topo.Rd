@@ -1,4 +1,5 @@
 \name{gts.topo}
+\alias{gts.topo}
 \title{
 Topology of two geological time concept
 

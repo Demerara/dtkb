@@ -1,4 +1,5 @@
 \name{gts.within}
+\alias{gts.within}
 \title{
 Function querying all geological time concepts within a time interval
 }
